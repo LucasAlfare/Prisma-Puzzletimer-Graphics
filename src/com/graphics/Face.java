@@ -6,8 +6,10 @@ package com.graphics;
 
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Face {
+
     public final Vector3[] vertices;
     public final Color color;
 
@@ -112,5 +114,13 @@ public class Face {
         final Vector3[] verticesArray = new Vector3[vertices.size()];
         vertices.toArray(verticesArray);
         return this.setVertices(verticesArray);
+    }
+
+    @Override
+    public String toString() {
+        return "Face{" +
+                "vertices=" + Arrays.toString(vertices) +
+                ", color=" + color +
+                '}';
     }
 }

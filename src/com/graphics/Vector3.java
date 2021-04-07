@@ -47,4 +47,13 @@ public class Vector3 {
     public Vector3 unit() {
         return this.mul(1.0 / this.norm());
     }
+
+    @Override
+    public String toString() {
+        return "Vector3{" +
+                "x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                '}';
+    }
 }

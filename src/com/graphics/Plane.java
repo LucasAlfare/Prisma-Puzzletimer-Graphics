@@ -18,4 +18,12 @@ public class Plane {
         this.p = v1.add(v2).add(v3).mul(0.333_333_333_333_333_3);
         this.n = v2.sub(v1).cross(v3.sub(v1)).unit();
     }
+
+    @Override
+    public String toString() {
+        return "Plane{" +
+                "p=" + p +
+                ", n=" + n +
+                '}';
+    }
 }
