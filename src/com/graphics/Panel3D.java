@@ -65,6 +65,7 @@ public class Panel3D extends JPanel implements MouseListener, MouseMotionListene
         return new Vector3(this.getWidth() / 2.0 + (-v.x - this.viewerPosition.x) * (this.viewerPosition.z / v.z), this.getHeight() / 2.0 + (v.y - this.viewerPosition.y) * (this.viewerPosition.z / v.z), 0.0);
     }
 
+    @Override
     public void paintComponent(final Graphics g) {
         super.paintComponent(g);
         final Graphics2D g2 = (Graphics2D) g;
