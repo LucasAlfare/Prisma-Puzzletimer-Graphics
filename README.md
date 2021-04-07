@@ -1,4 +1,4 @@
-#Graphics
+# Graphics
 
 This is the main library used in the Prisma Puzzle Timer, which is a speedcubing application created by Walter Souza.
 
